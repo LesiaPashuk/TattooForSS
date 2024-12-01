@@ -1,0 +1,237 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 70px;
+    height: 80px;
+    width: 100%;
+    background-color: #0000007b;
+    position: fixed;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+}
+
+header h4 {
+    margin: 0;
+    color: #ddd;
+    font-size: 25px;
+    flex: 0 0 auto;
+    
+}
+
+.center-links {
+    display: flex;
+    gap: 100px; 
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: corbel;
+}
+
+.center-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+article:first-child {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('https://images.squarespace-cdn.com/content/v1/517662d4e4b04d2212226c70/1552463238172-7OKSGO018YGF6SBTGXKS/0s18eLvuV24.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+article:first-child div {
+    margin: 0; 
+}
+article:first-child h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-size: 800%;
+    color: rgb(180, 30, 30);
+    
+}
+
+article:first-child h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(180, 30, 30);
+    font-size: 30px;
+    font-family: corbel;
+}
+
+article:first-child button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgb(180, 30, 30);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+
+}
+article:nth-child(2){
+    background-color: rgb(180, 30, 30);
+}
+article:nth-child(2) h2{
+    font-family: corbel;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: -50px;
+    
+}
+.center-text {
+    font-family: corbel;
+    display: inline-block; 
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+article:nth-child(2) img{
+    height: 450px;
+}
+
+article:nth-child(3){
+    background-color: rgb(239, 239, 239);
+}
+article:nth-child(3) h2{
+    font-family: corbel;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-top: -50px;
+    
+}
+article:nth-child(3) h3{
+    font-family: corbel;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+   
+    
+}
+article:nth-child(3) ul {
+    font-family: corbel;
+    display: flex; 
+    gap: 20px;
+    list-style: none; 
+    padding: 0; 
+    justify-content: center; 
+    font-size: 20px;
+}
+
+article:nth-child(3) li {
+    font-family: corbel;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+article:nth-child(3) img {
+    width: 200px; 
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.center-text1 {
+    font-family: corbel;
+    display: inline-block; 
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+article:nth-child(4) {
+    background-image: url('https://4.bp.blogspot.com/-VYZEf5Hj2x8/TnbRosxO0EI/AAAAAAAAhi0/zKBEi2HoUWo/w1200-h630-p-k-no-nu/10.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+article:nth-child(4) h2{
+    font-family: corbel;
+    font-size: 1.2em;
+    margin-bottom: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+ 
+    
+}
+article form {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
+    width: 500px; 
+    margin: 0 auto; 
+}
+
+article form input, article form button {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%; 
+    box-sizing: border-box;
+    height: 55px;
+    font-family: corbel;
+}
+
+article form button {
+    background-color: rgb(180, 30, 30);
+    color: #fff;
+    border: none;
+    font-family: corbel;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+footer{
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding:5px 0px;
+    
+}
+#tg{
+    position: relative;
+    margin-top: -60px;
+    padding: 0px;
+    margin-left: 10px;
+    height: 40px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
