@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,16 +11,27 @@
 <body>
     <header>
         <h4>T.A.T.t.o.o</h4>
-        <div class = "center-links">
-            <a  href="#start">В НАЧАЛО</a>
+        <div class="center-links">
+            <a href="#start">В НАЧАЛО</a>
             <a href="#about">О НАС</a>
             <a href="#form">ЗАПИСАТЬСЯ</a>
         </div>
-       
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="burger-links" id="burger-links">
+                <a href="#start">В НАЧАЛО</a>
+                <a href="#about">О НАС</a>
+                <a href="#form">ЗАПИСАТЬСЯ</a>
+            </div>
+        </div>
     </header>
     <main>
         <article id="start">
-            <div >
+            <div>
                 <h1>Тату студия</h1>
                 <h2>Уникальные авторские эскизы от опытных мастеров, <br>делаем хорошо и качественно, как для себя</h2>
                 <button>Записаться</button>
@@ -28,9 +40,7 @@
         <article id="about">
             <h2>О нас</h2>
             <h3><span class="center-text">Мы работаем с 2003 года, обеспечиваем клиентам чистый и безопасный процесс набивания татуировки. Наш фокус — оригинальные и эксклюзивные татуировки, рисуем во всех популярных стилях от Old School до минимализма.</span></h3>
-            
-                    <img src="https://avatars.mds.yandex.net/i?id=0a7dea00107b68c483849cd357556989d0fc9f40d8822a03-12629054-images-thumbs&n=13" alt="фото1">
-               
+            <img src="https://avatars.mds.yandex.net/i?id=0a7dea00107b68c483849cd357556989d0fc9f40d8822a03-12629054-images-thumbs&n=13" alt="фото1">
         </article>
         <article>
             <h2>Наши мастера</h2>
@@ -64,12 +74,14 @@
             </form>
         </article>
     </main> 
-    <footer><span>
-        <h2>Made with love</h2>
-        <a href="https://t.me/alesiapashuk">
-            <img id="tg" src="https://simplekite.ru/upload/iblock/905/1p46n9bquu47l7t2d0ln3os0a17whnip/noroot.png" alt="tg">
-        </a>
-    </span>
+    <footer>
+        <span>
+            <h2 id ="footerH2">Made with love</h2>
+            <a href="https://t.me/alesiapashuk">
+                <img id="tg" src="https://simplekite.ru/upload/iblock/905/1p46n9bquu47l7t2d0ln3os0a17whnip/noroot.png" alt="tg">
+            </a>
+        </span>
     </footer>
+    <script src="ssTask1.js"></script>
 </body>
 </html>

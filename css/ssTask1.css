@@ -2,8 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
 }
-
 
 header {
     display: flex;
@@ -16,6 +17,7 @@ header {
     position: fixed;
     flex-wrap: wrap; 
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 header h4 {
@@ -23,7 +25,6 @@ header h4 {
     color: #ddd;
     font-size: 25px;
     flex: 0 0 auto;
-    
 }
 
 .center-links {
@@ -38,6 +39,15 @@ header h4 {
     text-decoration: none;
     color: #ddd;
     font-size: 18px; 
+    transition: color 0.3s ease;
+}
+
+.center-links a:hover {
+    color: rgb(180, 30, 30);
+}
+
+.burger-menu {
+    display: none;
 }
 
 main {
@@ -54,6 +64,7 @@ article {
     padding: 20px;
     box-sizing: border-box;
 }
+
 article:first-child {
     display: flex;
     justify-content: center; 
@@ -67,12 +78,12 @@ article:first-child {
 article:first-child div {
     margin: 0; 
 }
+
 article:first-child h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     font-size: 800%;
     color: rgb(180, 30, 30);
-    
 }
 
 article:first-child h2 {
@@ -94,20 +105,29 @@ article:first-child button {
     height: 50px;
     width: 200px;
     font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+article:first-child button:hover {
+    background-color:rgb(180, 30, 30);
+    transform: scale(1.15); 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
 
 }
-article:nth-child(2){
+
+article:nth-child(2) {
     background-color: rgb(180, 30, 30);
 }
-article:nth-child(2) h2{
+
+article:nth-child(2) h2 {
     font-family: corbel;
     font-size: 1.2em;
     margin-bottom: 20px;
     color: rgb(255, 255, 255);
     font-size: 40px;
     margin-top: -50px;
-    
 }
+
 .center-text {
     font-family: corbel;
     display: inline-block; 
@@ -118,31 +138,32 @@ article:nth-child(2) h2{
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
-article:nth-child(2) img{
+
+article:nth-child(2) img {
     height: 450px;
 }
 
-article:nth-child(3){
+article:nth-child(3) {
     background-color: rgb(239, 239, 239);
 }
-article:nth-child(3) h2{
+
+article:nth-child(3) h2 {
     font-family: corbel;
     font-size: 1.2em;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     font-size: 40px;
     margin-top: -50px;
-    
 }
-article:nth-child(3) h3{
+
+article:nth-child(3) h3 {
     font-family: corbel;
     font-size: 1.2em;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     font-size: 20px;
-   
-    
 }
+
 article:nth-child(3) ul {
     font-family: corbel;
     display: flex; 
@@ -166,6 +187,7 @@ article:nth-child(3) img {
     border-radius: 25px;
     margin-bottom: 10px;
 }
+
 .center-text1 {
     font-family: corbel;
     display: inline-block; 
@@ -183,15 +205,15 @@ article:nth-child(4) {
     background-position: center; 
     background-repeat: no-repeat; 
 }
-article:nth-child(4) h2{
+
+article:nth-child(4) h2 {
     font-family: corbel;
     font-size: 1.2em;
     margin-bottom: 80px;
     color: rgb(255, 255, 255);
     font-size: 40px;
- 
-    
 }
+
 article form {
     display: flex;
     flex-direction: column; 
@@ -207,6 +229,8 @@ article form input, article form button {
     box-sizing: border-box;
     height: 55px;
     font-family: corbel;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 article form button {
@@ -216,22 +240,191 @@ article form button {
     font-family: corbel;
     cursor: pointer;
     font-size: 25px;
+    transition: background-color 0.3s ease;
 }
 
-footer{
+article form button:hover {
+    background-color:rgb(108, 18, 18);
+    color:#ffffff
+}
+
+footer {
     background-color: black; 
     color: white; 
-    text-align: center; 
-    padding:5px 0px;
-    
+    height: auto;
 }
-#tg{
+#footerH2{
+   margin-top: auto;
+   margin-bottom:auto;
+   
+   text-align: center; 
+   padding: 20px;
+   font-size: 80%;
+   font-family:Snell Roundhand, cursive;
+}
+
+#tg {
     position: relative;
-    margin-top: -60px;
+    margin-top: -50px;
     padding: 0px;
     margin-left: 10px;
     height: 40px; 
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+}
+
+@media (max-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        
+        font-family: Arial, sans-serif;
+    }
+    header {
+        padding: 0 20px;
+    }
+
+    .center-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .burger-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: #ddd;
+        transition: all 0.3s ease;
+    }
+
+    .burger-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #0000007b;
+        width: 100%;
+        text-align: center;
+    }
+
+    .burger-links.active {
+        display: flex;
+    }
+
+    .burger-links a {
+        padding: 15px 0;
+        color: #ddd;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .burger-links a:hover {
+        color: #ff6347;
+    }
+
+    article form {
+        width: 90%;
+    }
+}
+/* Адаптивность для телефонов */
+@media (max-width: 480px) {
+    header {
+        padding: 0 10px;
+        height: 60px;
+    }
+
+    header h4 {
+        font-size: 20px;
+    }
+
+    .burger-icon {
+        width: 25px;
+        height: 20px;
+    }
+
+    .burger-links {
+        top: 60px;
+    }
+
+    article:first-child {
+        background-size: cover;
+        background-position: center;
+    }
+
+    article:first-child h1 {
+        font-size: 300%;
+    }
+
+    article:first-child h2 {
+        font-size: 22px;
+    }
+
+    article:first-child button {
+        height: 35px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    article:nth-child(2) h2,
+    article:nth-child(3) h2,
+    article:nth-child(4) h2 {
+        font-size: 25px;
+    }
+
+    .center-text,
+    .center-text1 {
+        font-size: 18px;
+    }
+
+    article:nth-child(2) img {
+        height: 200px;
+    }
+
+    article:nth-child(3) ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article:nth-child(3) img {
+        width: 120px;
+    }
+
+    article:nth-child(3) h3 {
+        font-size: 16px;
+    }
+
+    article form input,
+    article form button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    article {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    article:nth-child(3) {
+        padding: 70px 0;
+    }
+
+    article:nth-child(3) ul {
+        gap: 20px;
+        padding: 0 20px;
+    }
 }
