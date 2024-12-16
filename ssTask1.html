@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -68,11 +67,23 @@
             <form action="">
                 <input type="text" placeholder="Введите имя" name="name" required>
                 <input type="text" placeholder="Введите вашу почту" name="email" required>
-                <input type="number" placeholder="Введите номер телефона" name="telephone" required>
+                <input type="tel" placeholder="Введите номер телефона" name="telephone" required>
                 <input type="text" placeholder="Ваш комментарий" name="coment" required>
                 <button type="submit">Отправить</button>
             </form>
         </article>
+        <article id="characters">
+            <h2>Наши довольные клиенты (API)</h2>
+            <button id="buttonForApi">Открыть список клиентов</button>
+        </article>
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Персонажи из Rick and Morty</h2>
+                <div id="character-cards"></div>
+            </div>
+        </div>
     </main> 
     <footer>
         <span>
